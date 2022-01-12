@@ -1,0 +1,144 @@
+  Body{
+  Width: 80%;
+  margin-left: 300px;
+  margin-right: auto;
+}
+
+#navbar{
+  Font-family: helvetica;
+  display:flex;
+  position:fixed;
+  z-index: 1;
+  left:0;
+  top:0;
+  height: 100%;
+  width: 275px;
+  border-right: solid;
+  align-contents: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  align-items: center;
+
+}
+#nav-header{
+  font-size: 20px;  
+  border-bottom: 3px solid;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+
+}
+.list-s{
+  list-style: none;
+  border-bottom: 2px solid;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.nav-link{
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+  color: orange;
+}
+
+.main-section{
+  text-algin: left;
+  font-family: helvetica;
+}
+
+section header{
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+#pro-con-grid{
+  display: grid;
+  grid-template-column: 1fr; 1fr;
+  grid-template-rows:18px; 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    "pron conn"
+    "pros cons";
+  text-align: center;
+  width: 65%;
+  border: 1px solid black;
+  padding: 10px 25px 10px 0px;
+}
+#pron{
+  grid-area: pron;
+}
+#conn{
+  grid-area: conn;
+}
+#pros{
+  grid-area:pros;
+  width: 75%;
+  padding-left: 80px;
+}
+#cons{
+  grid-area:cons;
+}
+
+.code-box{
+  display:block;
+  position: relative;
+  word-break:normal;
+  word-wrap:normal;
+  text-align:left;
+  white-space: pre-line;
+  background: rgba(229, 229 ,229, 0.5);
+  border-radius: 5px;
+  width:60%
+}
+
+@media screen and (max-width: 600px){
+   Body{
+  Width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  #navbar{
+  Font-family: helvetica;
+  display:flex;
+  position:sticky;
+  z-index: 1;
+  left:0;
+  top:0;
+  height: 100px;
+  width: 100%;
+  border-bottom: solid;
+  align-contents: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: row;
+  align-items: center;
+  background: rgba(227, 219, 218, 0.8)
+
+  }
+  #nav-header{
+  font-size: 20px;  
+
+  width: 100%;
+  text-align: left;
+
+  }
+  .list-s{
+  list-style: none;
+  border-right: 2px solid;
+  padding: 10px;
+  text-align: center;
+  }
+#ul-header{
+  display: flex;
+  flex-direction: row;
+}
+  .nav-link{
+  color: black;
+  text-decoration: none;
+  }
+}
+
+

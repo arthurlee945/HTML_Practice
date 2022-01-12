@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Arthur Lee</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav id="navbar">
+  <header id="nav-header"><strong>Journey through C#</strong></header>
+  <ul id="ul-header">
+    <li class ="list-s"><a class="nav-link" href ="#what_is_C#?">What is C#?</a></li>
+    <li class ="list-s"><a class="nav-link" href ="#design_goals_for_C#_creators">Design goals for C# Creators</a></li>
+    <li class ="list-s"><a class="nav-link" href ="#pros_and_cons_of_C#">Pros and cons of C#</a></li>
+    <li class ="list-s"><a class="nav-link" href ="#how_to_start_on_c#">How to Start on C#</a></li>
+    <li class ="list-s"><a class="nav-link" href ="#game_engines_that_use_C#"> Game Engines that use C#</a></li>
+    <li class ="list-s"><a class="nav-link" href ="#reference">Reference</a></li>
+  <ul>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="what_is_C#?">
+    <header><strong>What is C#?<strong></header>
+    <p>C# (/si ʃɑːrp/ see sharp) is a general-purpose, multi-paradigm programming language. C# encompasses static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.</p>
+      <p>C# was designed by Anders Hejlsberg from Microsoft in 2000 and was later approved as an international standard by Ecma (ECMA-334) in 2002 and ISO (ISO/IEC 23270) in 2003. Microsoft introduced C# along with .NET Framework and Visual Studio, both of which were closed-source. At the time, Microsoft had no open-source products. Four years later, in 2004, a free and open-source project called Mono began, providing a cross-platform compiler and runtime environment for the C# programming language. A decade later, Microsoft released Visual Studio Code (code editor), Roslyn (compiler), and the unified .NET platform (software framework), all of which support C# and are free, open-source, and cross-platform. Mono also joined Microsoft but was not merged into .NET.</p>
+  </section>
+      <br>
+  <section class="main-section" id="design_goals_for_C#_creators" >
+    <header>Design goals for C# Creators</header>
+    <ul>
+      <li>The language is intended to be a simple, modern, general-purpose, object-oriented programming language.</li>
+      <li>The language, and implementations thereof, should provide support for software engineering principles such as strong type checking, array bounds checking, detection of attempts to use uninitialized variables, and automatic garbage collection. Software robustness, durability, and programmer productivity are important.</li>
+      <li>The language is intended for use in developing software components suitable for deployment in distributed environments.</li>
+      <li>Portability is very important for source code and programmers, especially those already familiar with C and C++.</li>
+      <li>Support for internationalization is very important.</li>
+      <li>C# is intended to be suitable for writing applications for both hosted and embedded systems, ranging from the very large that use sophisticated operating systems, down to the very small having dedicated functions.</li>
+      <li>Although C# applications are intended to be economical with regard to memory and processing power requirements, the language was not intended to compete directly on performance and size with C or assembly language.</li>
+    </ul>
+  </section>
+      <br>
+  <section id="pros_and_cons_of_C#" class="main-section">
+    <header>Pros and Cons of C#</header>
+    <div id="pro-con-grid">
+      <p id="pron">Pros</p>
+      <p id="conn">Cons</p>
+      <ul id="pros">
+        <li>Object-oriented Programming</li>
+        <br>
+        <li>High-level language with memory access capabilities</li>
+        <br>
+        <li>Designed as a part of .NET platform: cross-platform runtimes, and extensive resources of .NET frameworks</li>
+      </ul>
+      <ul id="cons">
+        <li>C# performance isn’t the absolute best</li>
+        <br>
+        <li>Dependence on .NET platform</li>
+        <br>
+        <li>Hard learning curve</li>
+      </ul>
+    </div>
+  </section>
+  <br>
+  <section id="how_to_start_on_c#" class="main-section">
+    <header>How to start on C#</header>
+    <p>Every console application starts from the <code>Main()</code> method of the <code>Program</code> class. The following example displays "Hello World!!" on the console.</p>
+    <code class="code-box">
+      static void Main(string[] args)
+        {
+            string message = "Hello World!!";
+
+            Console.WriteLine(message);
+        }
+    </code>
+    <p>C# is an object-oriented programming language. In Object-Oriented Programming methodology, a program consists of various objects that interact with each other by means of actions. The actions that an object may take are called methods. Objects of the same kind are said to have the same type or, are said to be in the same class.</p>
+    <code class="code-box">
+      using System;
+
+namespace RectangleApplication {
+   class Rectangle {
+      
+      // member variables
+      double length;
+      double width;
+      
+      public void Acceptdetails() {
+         length = 4.5;    
+         width = 3.5;
+      }
+      public double GetArea() {
+         return length * width; 
+      }
+      public void Display() {
+         Console.WriteLine("Length: {0}", length);
+         Console.WriteLine("Width: {0}", width);
+         Console.WriteLine("Area: {0}", GetArea());
+      }
+   }
+   class ExecuteRectangle {
+      static void Main(string[] args) {
+         Rectangle r = new Rectangle();
+         r.Acceptdetails();
+         r.Display();
+         Console.ReadLine(); 
+      }
+   }
+}
+    </code>
+    <p>When the above code is compiled and executed</p>
+    <code calss="code-box">
+      Length: 4.5
+Width: 3.5
+Area: 15.75
+    </code>
+    <p>As you can see from above examples, C# is an affective language for complex problem solving.</p>     
+  </section>
+      <br>
+  <section id="game_engines_that_use_C#" class="main-section">
+    <header>Game Engines that Use C#</header>
+    <h3>Unity</h3>
+    <p>Unity is one of the top-performing game engines many big companies and indie studios use for game development. And that’s because Unity makes every gaming experience possible. Its tools, such as the High Definition Render Pipeline, aid in the creation of realistic game assets you can use for 3D, virtual reality, and augmented reality games. Moreover, it has a specific set of features that help with 2D game asset creation. No gaming experience is left out in Unity. And with the powerhouse language of C# in Unity’s environment, it’s easy to see why it’s the choice game engine for many game producers.</p>
+    <h3>Godot</h3>
+    <p>Godot has plenty of strong points for a relatively new game engine. It can create 2D and 3D games. It’s easy to install and doesn’t consume a lot of your hardware’s memory. It’s free and open-source, which means you can start working without spending a fortune on infrastructure and other game development necessities. And it allows developers to program through visual scripting and in multiple languages, namely GDScript, C++, and C#. With C#, game development in Godot is speedy. And pairing this speed with Godot’s extensive libraries for its nodes, which are the engine’s game-building blocks, you get to develop games with minimal effort.</p>
+    <h3>UrhoSharp</h3>
+    <p>UrhoSharp is a lightweight 3D game engine produced by Xamarin and powered by another game engine called Urho3D. Its code, mainly written in the C# and F# languages, makes games for multiple platforms, including iOS. One of the main advantages of using UrhoSharp is its extensive, diverse libraries. Through UrhoSharp’s strong third-party support, games can simulate real-world physics through the Bullet library and access tons of assets through the Open Assets library.</p>
+  </section>
+ <br>
+ <section id="reference" class="main-section">
+   <header>Reference</header>
+   <p>Above information is provided by <a href="https://www.google.com/">Google</a> and <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"> C# Wiki</a>.</p>
+ </section>
+  
+</main>
+<!-- partial -->
+  
+</body>
+</html>
