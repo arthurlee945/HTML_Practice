@@ -1,5 +1,5 @@
 # 
 
-A Pen created on CodePen.io. Original URL: [https://codepen.io/arthur-lee945/pen/ZEXJEEx](https://codepen.io/arthur-lee945/pen/ZEXJEEx).
+A Pen created on CodePen.io by <a href="https://codepen.io/arthur-lee945/pen/ZEXJEEx">Arthur Lee</a>.
 
 
